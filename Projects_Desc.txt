@@ -1,0 +1,124 @@
+HOUSE PRICE PREDICTION:
+    The view of this project is to predict the price of the house according to the parameters of the house.As House price PREDICTION is a very 
+    small model, so i had used shallow neural networks for the training and the dataset used is a also small. Additionally I'd compared the 
+    accuracy difference between machine learning and Deep learning model.
+
+HANDWRITING RECOGNITION:
+    The focus of the project is to detect the hand written digits from 0-9. Firstly i'd used statistical models for training. Next I'd shifted
+    to Neural networks and then on to Deep Convolutional Neural networks, in which I found a great rise in accuracy. The remarkable thing that
+    I'd used was Callbacks, which restricts my model from overfitting because the callbacks stops the training after it reaches a specific 
+    threshold. The dataset used was the famous MNIST and the accuracy is 99%.
+
+FASHION MNIST:
+    The focus of the project is to detect the fashion items say clothes, shoes, watches etc. Firstly started with the basic neural networks and
+    moved on to Deep Convolutional Neural networks. By adjusting the parameters and hyper parameters I get to achieve a good accuracy. I'd used
+    Callbacks. The dataset used was FASHION MNIST, accuracy 98%.
+
+Happy or Sad:
+    The main theme of this project is to detect the emotions, either happy or sad. My dataset consists of 80 images among them 40 are happy 
+    and 40 are sad. I'd considered Deep Convolutional Neural networks for training the model and used callbacks to avoid overfitting. One of 
+    the impressive thing I'd used was Image Augmentation because of having very limited amount of data. This technique take the images and
+    perform crop, sheer, reflect x and y axis,rescale, and a lot more, and passes to the alogorithm on the go without storing in the memory. 
+
+CAT vs DOG:
+    The preview of this project is to detect cat and the dog. The dataset used is from kaggle which consists of 25000 images. I'd used Deep
+    Convolutional neural networks for model training. I'd used Image Augmentation and callbacks and ended up with great accuracy.
+
+HORSE vs HUMAN:
+    The theme of this project is to detect Horse and the Human. First I'd used Deep Convolutional neural networks with image Augmentation and 
+    callbacks but i didn't find it satisfactory. So I had used the famous architecture called Inception V3 with transfer learning. I froze the 
+    previous layers from being retrained and trained the last 2 dense layers for achieving my desired output. I was delighted to see such 
+    great accuracy. 
+
+ROCK, PAPER, SCISSOR:
+    This is a multi-class classification project in which I am used to detect the old school game rock paper scissor using the hand gestures.
+    I'd used dcnn along with image Augmentation and callbacks. 
+
+MNIST for hand gestures RECOGNITION:
+    This project is about to detect the hand gestures of digits from 0-9. I'd used deep Convolutional neural networks along with image 
+    Augmentation and callbacks.The dataset is taken from kaggle. 
+
+Sarcasm Detection:
+    This project is used to detect the Sarcasm from the user reviews. I'd used neural networks for training the model. Firstly I'd tokenized
+    the entire dataset set and used padding to keep all the sequences length the same. Next used Word Embedding for an n-dimensional vector.
+    By adjusting the parameters i get to achieve 85% accuracy.
+
+IMDB reviews:
+    This project is based on extracting the sentiment from all the reviews from users whether it is positive or negative. Firstly I'd trained
+    with normal Embedding with Dense layer, I ended up with poor accuracy. Next I used word Embedding with Bidirectional LSTM with 2 layerswhich helped 
+    my model to secure an accuracy around 100% on training 90% test set, but yeah it sightly led to overfitting. I either trained it with
+    8k sub-words corpus rather than entire words corpus but the accuracy drove too badly because sub-words will lose the entire meaning of 
+    the sentence. 
+
+BBC archieves:
+    This project is used to categorize the BBC news articles into 6 categories say sports, entertainment, etc. Firstly I'd removed commonly 
+    occuring stopwords which was the noise for the data. Training labels were turned into sequences. Then I had used word Embedding to project 
+    into n-dimensional vector to categorize the similar meaning words and then used softmax activation with output layer of 6 neurons for 
+    categorization. The accuracy was 95%.
+
+TWeets:
+    This project is used to detect positive and negative tweets from the twitter users. The dataset used is from kaggle.
+
+Irysh song generation:
+    This project is based on to generate an Irysh poetry or song. I'd used around 1980 lines of Irysh songs dataset. First tokenized the 
+    entire dataset and converted into sequences and added padding to the data. I'd used Bidirectional LSTM for training the model because
+    it consists of memory cell states which are really helpful for generating the new lines. I'd used Adam optimizer with my own learning 
+    rate for the best accuracy. The accuracy was 80% with 100 epochs.
+
+Shakespeare poetry
+    The theme of the project is to generate a poetry like Shakespeare's poetry using old english literature. I'd used 2 layer bi-directional
+    LSTM with droupout regularization. Finally I reached an accuracy of 79.87% over 100 epochs. It accuracy will increase if we train it upon
+    500 epochs. I'd used matplot library to plot the graph to visualize the loss and accuracy.
+
+Sunspots-Forcasting:
+    This project is used to predict the sunspots in the future based upon the previous data. The dataset is taken from kaggle. FIrstly I'd 
+    used machine learning technique like mean squared error and mean absolute error. I'd cleaned date using trailing and centered windows 
+    by taking t-365days data to reduce the noise and a lot more. Next I used LSTM, DCNN to train the model, it took a bit long time to train
+    but ended up with good accuracy. I'd used learning Rate Scheduler too which is a bit advantage.
+
+Melbourne-Climate-Temperature:
+    This project is used to predict the future temperature in Melbourne.I'd used CNN along with LSTM to train the model. I'd used lambda 
+    layers in Addition while creating the model architecture. 
+
+Speech Recognition:
+    This project is a Trigger Word detection like Google,Alexa,Siri. I'd developed a speech recognition system in order to activate by speech.
+    The trigger word is "ACTIVATE". I'd used Convolutional layers along with Gradient Recurrent Units to design the model. The accuracy is 
+    not soo good but it hit the mark.
+
+JAZZ Music generation:
+    This project to used to genenrate a new music based upon the large corpus of music data. I'd used LSTM and achieved an accuracy of 90% 
+    for 100 epochs
+
+EMOJIFY:
+    This project is used to geneate emojis based on the text. I'd used pre-trained embedding layers along with LSTM with dropout regularization.
+    I hit an accuracy of 89% for 50 epochs.
+
+FACE RECOGNITION:
+    This project is to recoginize the face and detect the emotions. I'd used Deep Convolutional neural networks along I've added Batch 
+    NOrmalization while creating the architecture. The accuracy got a hit of 99% which is soo amazing. 
+
+Neural Style Transfer:
+    This project is used to take a style image and a content image and club them both.
+
+Autonomous Driving Car Detection:
+    This project is used to detect more than 1 car from the frame. I'd used YOLO-V3 architecture for training the model and used Edge detection
+    techniques. It is used to predict all cars in real time video. The dataset used is coco dataset. I'd used non-max supression technique
+    which is widely used in recogniton models, it's intersection over Union. The accuracy is good because the model was pre trained before.
+
+Machine Translation:
+    I'd used LSTM 
+
+Sepsis PREDICTION:
+
+
+
+Story Telling:
+
+
+
+
+
+
+
+
+ 
